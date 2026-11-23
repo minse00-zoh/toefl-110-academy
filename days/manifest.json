@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "updated": "2026-11-23",
+  "days": [
+    {
+      "day": 2,
+      "label": "Advanced Practice Set",
+      "theme": "Evaluating Evidence and Making Decisions",
+      "description": "인과 추론, 함축적 의미, 화자 의도와 논리적 주장",
+      "path": "days/day-02.html",
+      "minutes": 120,
+      "vocabulary": 30,
+      "week": 1,
+      "storage_key": "toefl110day2-v1",
+      "archived_at": "2026-11-23"
+    },
+    {
+      "day": 1,
+      "label": "Foundations of Academic Reasoning",
+      "theme": "Open Science and University Life",
+      "description": "과학적 투명성, 연구 데이터 해석, 대학 생활과 학술 소통",
+      "path": "days/day-01.html",
+      "minutes": 120,
+      "vocabulary": 30,
+      "week": 1,
+      "storage_key": "toefl110day1-revised-v1",
+      "archived_at": "2026-11-23"
+    }
+  ]
+}
