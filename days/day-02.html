@@ -22,12 +22,27 @@
 #resetTop:hover{background:#fff1ee}
 @media(max-width:600px){.top{height:auto;min-height:62px;padding:9px 12px;gap:8px}.top-actions{flex-wrap:wrap;justify-content:flex-end}.top .tiny{font-size:10px;padding:6px 8px}}
 </style>
+<style id="home-navigation-style">
+.top .home-breadcrumb{color:var(--navy);font-weight:800;text-decoration:none}
+.top .home-breadcrumb:hover{text-decoration:underline;color:#295eaa}
+.top .home-top-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;white-space:nowrap;background:#e9f1ff;border-color:#b8d0f5;color:#194b97;font-weight:850}
+.top .home-top-link:hover{background:#dceaff;border-color:#95b8ee}
+.top .home-top-link:focus-visible,.top .home-breadcrumb:focus-visible{outline:3px solid #7baafa;outline-offset:2px}
+@media(max-width:700px){
+ .top{height:auto;min-height:62px;padding:10px 13px;gap:9px;flex-wrap:wrap;position:relative}
+ .top-actions{flex:1 1 100%;width:100%;flex-wrap:wrap;justify-content:flex-start;gap:7px}
+ .top .home-top-link{order:-1}
+ .top .timer{font-size:11px;padding:6px 8px}
+ .top .tiny{font-size:11px;padding:7px 9px}
+ .crumb{font-size:11px}
+}
+</style>
 </head>
 <body>
 <a class="archive-back-link" href="../index.html" aria-label="학습자료 보관함으로 돌아가기">← 전체 Day 목록</a>
 <div class="app">
 <aside class="sidebar" id="sidebar"></aside>
-<div class="main"><header class="top"><div class="crumb"><b>TOEFL 110+</b> &nbsp;/&nbsp; <span id="crumb">학습 개요</span></div><div class="top-actions"><span class="timer" id="clock">00:00:00</span><button class="tiny" id="timerBtn">▶ 학습 시작</button><button class="tiny" id="saveBtn">↓ 내 답안 저장</button><button class="tiny" id="resetTop" type="button" title="이 Day의 저장 답안, 오답, 학습 시간을 초기화">↺ 답안 초기화</button></div></header><nav class="mobilebar" id="mobilebar"></nav><main class="content" id="view"></main></div>
+<div class="main"><header class="top"><div class="crumb"><a class="home-breadcrumb" href="../index.html" title="TOEFL Academy 홈으로">TOEFL 110+</a> &nbsp;/&nbsp; <span id="crumb">학습 개요</span></div><div class="top-actions"><a class="tiny home-top-link" href="../index.html" aria-label="학습자료 보관함 홈 화면으로 이동">⌂ 홈 화면</a><span class="timer" id="clock">00:00:00</span><button class="tiny" id="timerBtn">▶ 학습 시작</button><button class="tiny" id="saveBtn">↓ 내 답안 저장</button><button class="tiny" id="resetTop" type="button" title="이 Day의 저장 답안, 오답, 학습 시간을 초기화">↺ 답안 초기화</button></div></header><nav class="mobilebar" id="mobilebar"></nav><main class="content" id="view"></main></div>
 </div><div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script>
 'use strict';
