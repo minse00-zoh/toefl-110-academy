@@ -85,7 +85,7 @@ function writing(){
  '<h3 class="blocktitle">03. Write for an Academic Discussion</h3><p class="blockmeta">14분 · 교수 질문과 두 학생의 시각을 연결해 120~180단어 작성</p><div class="promptbox">'+E(d.writing.discussionTask).replace(/\n/g,"<br>")+'</div><textarea data-writing="discussion" style="min-height:210px" placeholder="자신의 주장과 근거를 작성하세요">'+E(s.writing.discussion||"")+'</textarea><div class="toolbar"><span class="status">'+String(s.writing.discussion||"").trim().split(/\s+/).filter(Boolean).length+' words</span><button class="btn ghost" data-reveal="discussionSample">모범 토론 답변 '+(s.shown.discussionSample?"숨기기":"보기")+'</button></div>'+(s.shown.discussionSample?'<div class="model">'+E(d.writing.discussionSample)+'</div>':"")+
  '<p class="note">서술형 과제의 자동 점수 환산은 제공하지 않습니다. 목적 적합성·정확성·논리성·어휘의 자연스러움을 모범 답변과 직접 비교하세요.</p>');
 }
-const v=s.vocab;
+let v=s.vocab;
 const coreIds=[0,3,6,9,12,15,18,21,24,27];
 function distractors(id){const wrong=[(id+7)%30,(id+13)%30,(id+19)%30];const pos=id%4;const options=wrong.slice();options.splice(pos,0,id);return {options,correct:pos};}
 function vocabBook(){return '<div class="vsection-head"><h3>Advanced Wordbook</h3><span class="pill mint">총 30개</span></div><div class="vocabscroll"><table class="vocabtable vwordtable"><thead><tr><th>Word / Phrase</th><th>한국어 뜻</th><th>Collocation · Example</th><th>암기·발음</th></tr></thead><tbody>'+d.vocabulary.map((w,i)=>'<tr><td><strong>'+E(w.term)+'</strong><br><small>'+(i<12?"TOPIC":"ADVANCED")+'</small></td><td>'+E(w.meaning)+'</td><td>'+E(w.collocation)+'<div class="vsub">'+E(w.example)+'</div></td><td><button class="viconbutton" data-sayword="'+i+'">▶</button> <button class="vlearn '+(v.known[i]?"islearned":"")+'" data-known="'+i+'">'+(v.known[i]?"✓ 암기":"○ 미암기")+'</button></td></tr>').join("")+'</tbody></table></div>';}
@@ -145,7 +145,7 @@ function exportTxt(){
 function clearDay(){
  if(!confirm("Day "+d.day+"의 답안, 오답, 암기 기록 및 학습 시간을 모두 초기화할까요?\n복구할 수 없습니다. 먼저 답변을 TXT로 내보내세요."))return;
  try{localStorage.removeItem(key);}catch(e){alert("저장소에 접근할 수 없습니다.");return;}
- s=init();render();toast("Day "+d.day+"의 답안을 초기화했습니다.");
+ s=init();v=s.vocab;render();toast("Day "+d.day+"의 답안을 초기화했습니다.");
 }
 document.addEventListener("click",e=>{
  const b=e.target.closest("button");if(!b)return;const a=b.dataset;
