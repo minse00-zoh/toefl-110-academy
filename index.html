@@ -46,7 +46,7 @@
   <section class="section" id="archive" aria-labelledby="archiveTitle">
     <div class="section-head">
       <div><h2 id="archiveTitle">Day별 학습자료</h2><p class="section-lead">최신 Day부터 보관됩니다. 학습한 날을 선택하면 그날의 문제와 기록을 다시 볼 수 있습니다.</p></div>
-      <div class="archive-tools"><input class="search" id="daySearch" type="search" aria-label="Day 또는 학습 주제 검색" placeholder="Day 번호 또는 학습 주제 검색…"><button id="resetAllDays" class="reset-all-btn" type="button">↺ 모든 Day 답안 초기화</button></div>
+      <div class="archive-tools"><input class="search" id="daySearch" type="search" aria-label="Day 또는 학습 주제 검색" placeholder="Day 번호 또는 학습 주제 검색…"><select id="weekFilter" class="search" aria-label="주차별 학습자료 선택" style="width:160px"><option value="">전체 주차</option><option value="1">Week 1 · 유형 적응</option><option value="2">Week 2 · Reading</option><option value="3">Week 3 · Listening</option><option value="4">Week 4 · Speaking</option></select><button id="resetAllDays" class="reset-all-btn" type="button">↺ 모든 Day 답안 초기화</button></div>
     </div>
     <div class="study-grid" id="dayGrid" aria-live="polite">
       <a class="day-card" href="days/day-02.html"><span class="day-n">DAY 02</span><h3>Evaluating Evidence and Making Decisions</h3><p>인과 추론, 함축적 의미, 화자 의도와 논리적 주장</p><div class="open-row">학습자료 열기 <span>→</span></div></a>
@@ -107,7 +107,8 @@ function paint(){
  }
  document.getElementById("totalDays").textContent=days.length+" Days";
  const q=search.value.trim().toLocaleLowerCase();
- const shown=days.filter(d=>!q||String(d.day).includes(q)||("day "+d.day).includes(q)||String(d.theme+" "+(d.label||"")+" "+(d.description||"")).toLocaleLowerCase().includes(q));
+ const weekChoice=document.getElementById("weekFilter").value;
+ const shown=days.filter(d=>(!weekChoice||String(d.week)===weekChoice)&&(!q||String(d.day).includes(q)||("day "+d.day).includes(q)||String(d.theme+" "+(d.label||"")+" "+(d.description||"")).toLocaleLowerCase().includes(q)));
  if(!shown.length){grid.innerHTML='<div class="empty">검색 결과가 없습니다. 다른 Day 번호나 주제를 입력해 주세요.</div>';return;}
  grid.innerHTML=shown.map(d=>{
    const latestFlag=latest&&latest.day===d.day;
@@ -123,6 +124,7 @@ function paint(){
  }).join("");
 }
 search.addEventListener("input",paint);
+document.getElementById("weekFilter").addEventListener("change",paint);
 const allowedStorageKey=key=>typeof key==="string" && /^toefl110day[0-9]{1,3}(?:-[a-z0-9]+)*$/i.test(key);
 function resetDayRecord(day){
   const d=days.find(x=>x.day===day);
