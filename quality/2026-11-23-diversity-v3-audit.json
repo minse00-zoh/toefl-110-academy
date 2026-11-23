@@ -684,6 +684,11 @@
           5
         ]
       }
-    ]
+    ],
+    "all20PreviousV2ArchivesHaveRebasedAssetAndHomeLinks": true,
+    "legacyDay1And2UnchangedInRepository": true,
+    "newDayKeysPreservePriorBrowserAnswers": true,
+    "publicDeploymentLiveStatusVerified": false,
+    "automaticScheduledTaskLeftDisabled": true
   }
 }
