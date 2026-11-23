@@ -17,12 +17,17 @@
 @media(max-width:760px){.vtabbar{grid-template-columns:repeat(2,minmax(0,1fr))}.vtab{padding:10px 4px}.vwordtools .inputline{max-width:none;width:100%}.vsection-head{flex-wrap:wrap}.vflash{min-height:280px}.vflash strong{font-size:25px}}
 </style>
 <style id="archive-back-style">.archive-back-link{position:fixed;right:18px;bottom:18px;z-index:1000;display:inline-flex;align-items:center;gap:8px;background:#0d2243;color:#fff!important;padding:11px 16px;border-radius:999px;box-shadow:0 9px 30px #10294555;font:700 13px/1.3 system-ui,"Malgun Gothic",sans-serif;text-decoration:none!important;border:1px solid #7bbaff66}.archive-back-link:hover{background:#225087}.archive-back-link:focus-visible{outline:3px solid #82baff;outline-offset:3px}@media(max-width:560px){.archive-back-link{right:10px;bottom:12px;padding:10px 13px;font-size:12px}}</style>
+<style id="reset-top-style">
+#resetTop{border-color:#efcbc5;color:#a6473a;background:#fff8f6}
+#resetTop:hover{background:#fff1ee}
+@media(max-width:600px){.top{height:auto;min-height:62px;padding:9px 12px;gap:8px}.top-actions{flex-wrap:wrap;justify-content:flex-end}.top .tiny{font-size:10px;padding:6px 8px}}
+</style>
 </head>
 <body>
 <a class="archive-back-link" href="../index.html" aria-label="학습자료 보관함으로 돌아가기">← 전체 Day 목록</a>
 <div class="app">
 <aside class="sidebar" id="sidebar"></aside>
-<div class="main"><header class="top"><div class="crumb"><b>TOEFL 110+</b> &nbsp;/&nbsp; <span id="crumb">학습 개요</span></div><div class="top-actions"><span class="timer" id="clock">00:00:00</span><button class="tiny" id="timerBtn">▶ 학습 시작</button><button class="tiny" id="saveBtn">↓ 내 답안 저장</button></div></header><nav class="mobilebar" id="mobilebar"></nav><main class="content" id="view"></main></div>
+<div class="main"><header class="top"><div class="crumb"><b>TOEFL 110+</b> &nbsp;/&nbsp; <span id="crumb">학습 개요</span></div><div class="top-actions"><span class="timer" id="clock">00:00:00</span><button class="tiny" id="timerBtn">▶ 학습 시작</button><button class="tiny" id="saveBtn">↓ 내 답안 저장</button><button class="tiny" id="resetTop" type="button" title="이 Day의 저장 답안, 오답, 학습 시간을 초기화">↺ 답안 초기화</button></div></header><nav class="mobilebar" id="mobilebar"></nav><main class="content" id="view"></main></div>
 </div><div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script>
 'use strict';
@@ -265,7 +270,7 @@ if(el.dataset.transcript){let k='tr'+el.dataset.transcript;state.seen[k]=!state.
 if(el.dataset.visible){state.seen[el.dataset.visible]=!state.seen[el.dataset.visible];save();render();return;}
 if(el.id==='timerBtn'){state.timerOn=!state.timerOn;save();el.textContent=state.timerOn?'Ⅱ 일시정지':'▶ 학습 시작';toast(state.timerOn?'학습 타이머를 시작했습니다.':'학습 타이머를 일시정지했습니다.');return;}
 if(el.id==='saveBtn'||el.id==='exportAnswers'){exportAnswers();return;}
-if(el.id==='resetAll'){if(confirm('이 브라우저에 저장된 TOEFL Day 2 답변과 타이머를 모두 삭제할까요? 먼저 TXT로 내보내는 것을 권장합니다.')){state=JSON.parse(JSON.stringify(initial));save();render();toast('학습 내역을 초기화했습니다.');}return;}
+if(el.id==='resetAll'||el.id==='resetTop'){if(confirm('이 브라우저에 저장된 TOEFL Day 2 답변과 타이머를 모두 삭제할까요? 먼저 TXT로 내보내는 것을 권장합니다.')){state=JSON.parse(JSON.stringify(initial));save();render();toast('학습 내역을 초기화했습니다.');}return;}
 });
 setInterval(()=>{if(state.timerOn){state.elapsed++;document.getElementById('clock').textContent=timeFmt(state.elapsed);if(state.elapsed%10===0)save();}},1000);
 window.addEventListener('beforeunload',save);
