@@ -1,0 +1,689 @@
+{
+  "revision": "2026-11-23-diversity-v3",
+  "runType": "content-and-structural-QA",
+  "etsOfficial": false,
+  "psychometricEquivalent": false,
+  "benchmarkUrls": [
+    "https://www.ets.org/toefl/test-takers/ibt/about/content.html?version=after-jan-2026",
+    "https://www.ets.org/toefl/institutions/blog/ibt-validity-by-design.html",
+    "https://www.tr.ets.org/pdfs/toefl/toefl-ibt-full-length-practice-test-1.pdf"
+  ],
+  "checks": {
+    "academicSimilarity": {
+      "mean": 0.0,
+      "max": 0.0044,
+      "worstPair": [
+        11,
+        20
+      ]
+    },
+    "talkSimilarity": {
+      "mean": 0.0,
+      "max": 0.0035,
+      "worstPair": [
+        13,
+        18
+      ]
+    },
+    "emailModelSimilarity": {
+      "mean": 0.0013,
+      "max": 0.0343,
+      "worstPair": [
+        10,
+        13
+      ]
+    },
+    "discussionModelSimilarity": {
+      "mean": 0.0,
+      "max": 0.0042,
+      "worstPair": [
+        6,
+        14
+      ]
+    },
+    "dailyLifeSimilarity": {
+      "mean": 0.0006,
+      "max": 0.0119,
+      "worstPair": [
+        11,
+        20
+      ]
+    },
+    "dayCount": 20,
+    "mcqCount": 400,
+    "uniqueQuestionStems": 400,
+    "questionDuplicates": [],
+    "vocabCount": 600,
+    "uniqueVocabCount": 600,
+    "repeatedVocabTerms": [],
+    "ctestGapCount": 200,
+    "speakingRepeatSentences": 140
+  },
+  "perDay": [
+    {
+      "day": 1,
+      "theme": "Open Science and University Life",
+      "discipline": "University Research / Information Literacy",
+      "week": 1,
+      "academicWords": 210,
+      "talkWords": 155,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 109,
+      "discussionModelWords": 129
+    },
+    {
+      "day": 2,
+      "theme": "The Evolution of Public Libraries",
+      "discipline": "History / Civic Institutions",
+      "week": 1,
+      "academicWords": 221,
+      "talkWords": 142,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 100,
+      "discussionModelWords": 122
+    },
+    {
+      "day": 3,
+      "theme": "Coral Reefs and Symbiotic Adaptation",
+      "discipline": "Marine Biology",
+      "week": 1,
+      "academicWords": 220,
+      "talkWords": 154,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 106,
+      "discussionModelWords": 117
+    },
+    {
+      "day": 4,
+      "theme": "Price Anchors and Consumer Choice",
+      "discipline": "Behavioral Economics",
+      "week": 1,
+      "academicWords": 229,
+      "talkWords": 156,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 105,
+      "discussionModelWords": 123
+    },
+    {
+      "day": 5,
+      "theme": "Art Conservation and Historical Authenticity",
+      "discipline": "Art History / Chemistry",
+      "week": 1,
+      "academicWords": 220,
+      "talkWords": 150,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 102,
+      "discussionModelWords": 124
+    },
+    {
+      "day": 6,
+      "theme": "Finding Planets by the Transit Method",
+      "discipline": "Astronomy / Planetary Science",
+      "week": 2,
+      "academicWords": 238,
+      "talkWords": 165,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 105,
+      "discussionModelWords": 120
+    },
+    {
+      "day": 7,
+      "theme": "Earthquake Early Warning and Seismic Waves",
+      "discipline": "Geology / Geophysics",
+      "week": 2,
+      "academicWords": 232,
+      "talkWords": 158,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 100,
+      "discussionModelWords": 124
+    },
+    {
+      "day": 8,
+      "theme": "Archaeological Trade Routes and Isotopes",
+      "discipline": "Archaeology / Material Science",
+      "week": 2,
+      "academicWords": 215,
+      "talkWords": 135,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 104,
+      "discussionModelWords": 121
+    },
+    {
+      "day": 9,
+      "theme": "Neighborhood Networks and Social Capital",
+      "discipline": "Sociology / Urban Studies",
+      "week": 2,
+      "academicWords": 214,
+      "talkWords": 136,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 105,
+      "discussionModelWords": 121
+    },
+    {
+      "day": 10,
+      "theme": "Wetlands and Nutrient Filtration",
+      "discipline": "Environmental Science",
+      "week": 2,
+      "academicWords": 203,
+      "talkWords": 144,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 106,
+      "discussionModelWords": 115
+    },
+    {
+      "day": 11,
+      "theme": "Code-Switching and Pragmatic Meaning",
+      "discipline": "Linguistics / Pragmatics",
+      "week": 3,
+      "academicWords": 227,
+      "talkWords": 153,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 96,
+      "discussionModelWords": 123
+    },
+    {
+      "day": 12,
+      "theme": "Why Musical Tuning Systems Changed",
+      "discipline": "Music History / Acoustics",
+      "week": 3,
+      "academicWords": 233,
+      "talkWords": 150,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 102,
+      "discussionModelWords": 117
+    },
+    {
+      "day": 13,
+      "theme": "Circadian Rhythms and Human Performance",
+      "discipline": "Human Physiology",
+      "week": 3,
+      "academicWords": 230,
+      "talkWords": 155,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 104,
+      "discussionModelWords": 122
+    },
+    {
+      "day": 14,
+      "theme": "Packet Switching and the Early Internet",
+      "discipline": "History of Technology / Computer Networks",
+      "week": 3,
+      "academicWords": 234,
+      "talkWords": 139,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 100,
+      "discussionModelWords": 119
+    },
+    {
+      "day": 15,
+      "theme": "Defaults, Opt-Outs and Behavioral Policy",
+      "discipline": "Behavioral Economics / Public Policy",
+      "week": 3,
+      "academicWords": 217,
+      "talkWords": 145,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 95,
+      "discussionModelWords": 115
+    },
+    {
+      "day": 16,
+      "theme": "Peer Feedback and the Learning Process",
+      "discipline": "Education / Learning Design",
+      "week": 4,
+      "academicWords": 227,
+      "talkWords": 134,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 105,
+      "discussionModelWords": 116
+    },
+    {
+      "day": 17,
+      "theme": "Museums, Repatriation and Cultural Ownership",
+      "discipline": "Cultural Heritage / Anthropology",
+      "week": 4,
+      "academicWords": 220,
+      "talkWords": 150,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 106,
+      "discussionModelWords": 123
+    },
+    {
+      "day": 18,
+      "theme": "Accessible Public Transport and Urban Inclusion",
+      "discipline": "Urban Mobility / Social Policy",
+      "week": 4,
+      "academicWords": 227,
+      "talkWords": 137,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 101,
+      "discussionModelWords": 115
+    },
+    {
+      "day": 19,
+      "theme": "Hybrid Work and Professional Development",
+      "discipline": "Organizational Psychology / Labor Economics",
+      "week": 4,
+      "academicWords": 209,
+      "talkWords": 129,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 109,
+      "discussionModelWords": 116
+    },
+    {
+      "day": 20,
+      "theme": "Collective Decisions Under Uncertainty",
+      "discipline": "Decision Science / Management",
+      "week": 4,
+      "academicWords": 231,
+      "talkWords": 139,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocabEntries": 30,
+      "emailModelWords": 109,
+      "discussionModelWords": 113
+    }
+  ],
+  "limitations": [
+    "Browser TTS is not original exam audio.",
+    "An automated checker cannot certify C1-C2 difficulty or ETS score equivalence.",
+    "Experts should review the accuracy and attractiveness of distractors in a formal pilot."
+  ],
+  "additionalQualityGates": {
+    "all20EmbeddedLessonSchemasValid": true,
+    "all20HtmlFilesContainHomeLinkAndAppScript": true,
+    "differentCtestAndAcademicText": true,
+    "everyCtestExactly10MaskedWords": true,
+    "everyProbedAcademicWordPresent": true,
+    "everyVocabularyItemHasEnglishNearParaphrase": true,
+    "everyVocabularyHeadwordAppearsInItsExample": true,
+    "correctAnswerDistributionPerDay": "five each: A/B/C/D",
+    "uniqueThemes": 20,
+    "uniqueVocabularyItems": 600,
+    "uniqueMCQStems": 400,
+    "priorV2ArchiveFiles": 20,
+    "originalContentOnly": true,
+    "ETSScoreOrDifficultyEquivalenceEstablished": false,
+    "independentHumanEditorialReviewCompleted": false,
+    "fullEndToEndLiveNetlifyTestCompleted": false,
+    "individualDays": [
+      {
+        "day": 1,
+        "discipline": "University Research / Information Literacy",
+        "mode": "comparison",
+        "academicWords": 210,
+        "talkWords": 155,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 2,
+        "discipline": "History / Civic Institutions",
+        "mode": "chronology",
+        "academicWords": 221,
+        "talkWords": 142,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 3,
+        "discipline": "Marine Biology",
+        "mode": "process",
+        "academicWords": 220,
+        "talkWords": 154,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 4,
+        "discipline": "Behavioral Economics",
+        "mode": "argument",
+        "academicWords": 229,
+        "talkWords": 156,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 5,
+        "discipline": "Art History / Chemistry",
+        "mode": "case",
+        "academicWords": 220,
+        "talkWords": 150,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 6,
+        "discipline": "Astronomy / Planetary Science",
+        "mode": "process",
+        "academicWords": 238,
+        "talkWords": 165,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 7,
+        "discipline": "Geology / Geophysics",
+        "mode": "mechanism",
+        "academicWords": 232,
+        "talkWords": 158,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 8,
+        "discipline": "Archaeology / Material Science",
+        "mode": "evidence-synthesis",
+        "academicWords": 215,
+        "talkWords": 135,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 9,
+        "discipline": "Sociology / Urban Studies",
+        "mode": "counterexample",
+        "academicWords": 214,
+        "talkWords": 136,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 10,
+        "discipline": "Environmental Science",
+        "mode": "systems",
+        "academicWords": 203,
+        "talkWords": 144,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 11,
+        "discipline": "Linguistics / Pragmatics",
+        "mode": "case",
+        "academicWords": 227,
+        "talkWords": 153,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 12,
+        "discipline": "Music History / Acoustics",
+        "mode": "chronology",
+        "academicWords": 233,
+        "talkWords": 150,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 13,
+        "discipline": "Human Physiology",
+        "mode": "systems",
+        "academicWords": 230,
+        "talkWords": 155,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 14,
+        "discipline": "History of Technology / Computer Networks",
+        "mode": "historical",
+        "academicWords": 234,
+        "talkWords": 139,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 15,
+        "discipline": "Behavioral Economics / Public Policy",
+        "mode": "argument",
+        "academicWords": 217,
+        "talkWords": 145,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 16,
+        "discipline": "Education / Learning Design",
+        "mode": "comparison",
+        "academicWords": 227,
+        "talkWords": 134,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 17,
+        "discipline": "Cultural Heritage / Anthropology",
+        "mode": "debate",
+        "academicWords": 220,
+        "talkWords": 150,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 18,
+        "discipline": "Urban Mobility / Social Policy",
+        "mode": "comparison",
+        "academicWords": 227,
+        "talkWords": 137,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 19,
+        "discipline": "Organizational Psychology / Labor Economics",
+        "mode": "tradeoff",
+        "academicWords": 209,
+        "talkWords": 129,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "day": 20,
+        "discipline": "Decision Science / Management",
+        "mode": "problem-solution",
+        "academicWords": 231,
+        "talkWords": 139,
+        "vocab": 30,
+        "mcq": 20,
+        "ctest": 10,
+        "answerLetters": [
+          5,
+          5,
+          5,
+          5
+        ]
+      }
+    ]
+  }
+}
