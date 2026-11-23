@@ -1,0 +1,224 @@
+{
+  "status": "structural-QA-passed; expert-psychometric-equivalence-not-established",
+  "benchmark_urls": [
+    "https://www.ets.org/toefl/test-takers/ibt/about/content.html?version=after-jan-2026",
+    "https://www.ets.org/content/dam/ets-org/pdfs/toefl/toefl-ibt-full-length-practice-test-1.pdf",
+    "https://www.ets.org/toefl/institutions/blog/ibt-validity-by-design.html"
+  ],
+  "quality_dimensions": [
+    "2026 TOEFL task-type coverage",
+    "context-specific university situations",
+    "single-word alternating C-test deletion",
+    "answer-key integrity",
+    "per-Day 30 vocabulary examples",
+    "day-specific localStorage keys",
+    "all-original non-ETS items"
+  ],
+  "limitations": [
+    "TTS is not equivalent to natural recorded speech",
+    "multiple-choice items are not calibrated psychometrically",
+    "no certified ETS raters or official scoring"
+  ],
+  "checks": [
+    {
+      "day": 1,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 318,
+      "talkWords": 235,
+      "writingModelWords": 158
+    },
+    {
+      "day": 2,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 313,
+      "talkWords": 230,
+      "writingModelWords": 153
+    },
+    {
+      "day": 3,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 321,
+      "talkWords": 238,
+      "writingModelWords": 162
+    },
+    {
+      "day": 4,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 312,
+      "talkWords": 229,
+      "writingModelWords": 154
+    },
+    {
+      "day": 5,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 307,
+      "talkWords": 224,
+      "writingModelWords": 148
+    },
+    {
+      "day": 6,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 309,
+      "talkWords": 226,
+      "writingModelWords": 148
+    },
+    {
+      "day": 7,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 317,
+      "talkWords": 234,
+      "writingModelWords": 157
+    },
+    {
+      "day": 8,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 307,
+      "talkWords": 224,
+      "writingModelWords": 146
+    },
+    {
+      "day": 9,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 306,
+      "talkWords": 223,
+      "writingModelWords": 146
+    },
+    {
+      "day": 10,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 307,
+      "talkWords": 224,
+      "writingModelWords": 150
+    },
+    {
+      "day": 11,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 312,
+      "talkWords": 229,
+      "writingModelWords": 152
+    },
+    {
+      "day": 12,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 312,
+      "talkWords": 229,
+      "writingModelWords": 151
+    },
+    {
+      "day": 13,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 307,
+      "talkWords": 224,
+      "writingModelWords": 149
+    },
+    {
+      "day": 14,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 309,
+      "talkWords": 226,
+      "writingModelWords": 150
+    },
+    {
+      "day": 15,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 309,
+      "talkWords": 226,
+      "writingModelWords": 150
+    },
+    {
+      "day": 16,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 307,
+      "talkWords": 224,
+      "writingModelWords": 147
+    },
+    {
+      "day": 17,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 305,
+      "talkWords": 222,
+      "writingModelWords": 147
+    },
+    {
+      "day": 18,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 308,
+      "talkWords": 225,
+      "writingModelWords": 147
+    },
+    {
+      "day": 19,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 312,
+      "talkWords": 229,
+      "writingModelWords": 152
+    },
+    {
+      "day": 20,
+      "readingQuestions": 10,
+      "listeningQuestions": 10,
+      "ctestGaps": 10,
+      "vocab": 30,
+      "academicWords": 321,
+      "talkWords": 238,
+      "writingModelWords": 160
+    }
+  ]
+}
