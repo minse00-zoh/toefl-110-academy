@@ -82,7 +82,21 @@ const grid=document.getElementById("dayGrid");
 const search=document.getElementById("daySearch");
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
 const safePath=s=>/^days\/day-\d{2,3}\.html$/.test(String(s))?s:"#archive";
-function stored(key){try{return Boolean(key&&window.localStorage.getItem(key));}catch(e){return false;}}
+function stored(key){
+  try{
+    if(!key)return false;
+    const raw=window.localStorage.getItem(key);
+    if(!raw)return false;
+    const data=JSON.parse(raw);
+    if(!data||typeof data!=="object")return false;
+    const anyEntries=value=>Boolean(value && typeof value==="object" && Object.keys(value).length>0);
+    if(Number(data.elapsed)>0)return true;
+    if(["answer","checked","cloze","build","writing","interview","checks","seen"].some(k=>anyEntries(data[k])))return true;
+    const v=data.vocab||{};
+    if(["studied","meaningAnswers","clozeAnswers","writingAnswers","quizChecked","mistakes","reviewAnswers"].some(k=>anyEntries(v[k])))return true;
+    return Boolean(typeof v.notes==="string"&&v.notes.trim());
+  }catch(e){return false;}
+}
 function normalise(entries){return entries.filter(d=>d&&Number.isInteger(d.day)&&d.day>0&&typeof d.theme==="string"&&/^days\/day-\d{2,3}\.html$/.test(String(d.path))).sort((a,b)=>b.day-a.day);}
 function paint(){
  const latest=days[0];
@@ -114,7 +128,7 @@ function resetDayRecord(day){
   const d=days.find(x=>x.day===day);
   if(!d||!allowedStorageKey(d.storage_key))return;
   let exists;
-  try{exists=window.localStorage.getItem(d.storage_key)!==null;}catch(err){window.alert("브라우저 저장소에 접근할 수 없습니다.");return;}
+  try{exists=stored(d.storage_key);}catch(err){window.alert("브라우저 저장소에 접근할 수 없습니다.");return;}
   if(!exists){paint();return;}
   if(!window.confirm("Day "+day+"에 저장된 답안, 오답 기록, 학습 타이머를 모두 초기화할까요?\n복구할 수 없으니 중요한 답변은 먼저 TXT로 내보내세요."))return;
   try{window.localStorage.removeItem(d.storage_key);paint();window.alert("Day "+day+"의 저장된 답안을 초기화했습니다.");}
@@ -129,7 +143,7 @@ grid.addEventListener("click",event=>{
 document.getElementById("resetAllDays").addEventListener("click",()=>{
   const records=days.filter(d=>allowedStorageKey(d.storage_key));
   let existing;
-  try{existing=records.filter(d=>window.localStorage.getItem(d.storage_key)!==null);}
+  try{existing=records.filter(d=>stored(d.storage_key));}
   catch(err){window.alert("브라우저 저장소에 접근할 수 없습니다.");return;}
   if(!existing.length){window.alert("현재 브라우저에 저장된 Day별 답안이 없습니다.");return;}
   if(!window.confirm("현재 브라우저의 Day별 저장 답안 "+existing.length+"개를 모두 초기화할까요?\n모든 답변, 오답 기록, 타이머가 삭제되며 복구할 수 없습니다. 먼저 각 Day에서 TXT로 백업하는 것을 권장합니다."))return;
